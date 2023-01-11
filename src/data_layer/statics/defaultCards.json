@@ -1,0 +1,472 @@
+[
+  {
+    "category": "Constantes",
+    "expanded": false,
+    "content": [
+      {
+        "ID_CARD": 1000,
+        "title": "Pi",
+        "description": "Constante Pi",
+        "params": [],
+        "latexCode": "\\pi",
+        "pythonCode": "def main():\n  return pi"
+      },
+      {
+        "ID_CARD": 1001,
+        "title": "Euler",
+        "description": "Constante de Euler",
+        "params": [],
+        "latexCode": "e",
+        "pythonCode": "def main():\n  return E"
+      },
+      {
+        "ID_CARD": 1002,
+        "title": "Infinito positivo",
+        "description": "Representación de la tendencia hacia el infinito",
+        "params": [],
+        "latexCode": "\\infty",
+        "pythonCode": "def main():\n  return oo"
+      },
+      {
+        "ID_CARD": 1003,
+        "title": "Infinito negativo",
+        "description": "Representación de la tendencia hacia el menos infinito",
+        "params": [],
+        "latexCode": "-\\infty",
+        "pythonCode": "def main():\n  return -oo"
+      }
+    ]
+  },
+  {
+    "category": "Matemáticas básicas",
+    "expanded": false,
+    "content": [
+      {
+        "ID_CARD": 1004,
+        "title": "Inverso",
+        "description": "Inverso aditivo de un término",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Término",
+            "content": null
+          }
+        ],
+        "latexCode": "-{#1}",
+        "pythonCode": "def main(x):\n  return -sympify(x)"
+      },
+      {
+        "ID_CARD": 1005,
+        "title": "Suma",
+        "description": "Suma de dos términos",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Primer término",
+            "content": null
+          },
+          {
+            "symbol": "y",
+            "description": "Segundo término",
+            "content": null
+          }
+        ],
+        "latexCode": "{#1} + {#2}",
+        "pythonCode": "def main(x, y):\n  return sympify(x) + sympify(y)"
+      },
+      {
+        "ID_CARD": 1006,
+        "title": "Resta",
+        "description": "Resta de dos términos",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Primer término",
+            "content": null
+          },
+          {
+            "symbol": "y",
+            "description": "Segundo término",
+            "content": null
+          }
+        ],
+        "latexCode": "{#1} - {#2}",
+        "pythonCode": "def main(x, y):\n  return sympify(x) - sympify(y)"
+      },
+      {
+        "ID_CARD": 1007,
+        "title": "Multiplicación",
+        "description": "Multiplicación de dos términos",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Primer término",
+            "content": null
+          },
+          {
+            "symbol": "y",
+            "description": "Segundo término",
+            "content": null
+          }
+        ],
+        "latexCode": "{#1} \\cdot {#2}",
+        "pythonCode": "def main(x, y):\n  return sympify(x) * sympify(y)"
+      },
+      {
+        "ID_CARD": 1008,
+        "title": "División",
+        "description": "División de dos términos",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Primer término (Numerador)",
+            "content": null
+          },
+          {
+            "symbol": "y",
+            "description": "Segundo término (Denominador)",
+            "content": null
+          }
+        ],
+        "latexCode": "\\frac{#1}{#2}",
+        "pythonCode": "def main(x, y):\n  return sympify(x) / sympify(y)"
+      },
+      {
+        "ID_CARD": 1009,
+        "title": "Potencia",
+        "description": "Elevar un termino a otro término",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Primer término (Base)",
+            "content": null
+          },
+          {
+            "symbol": "y",
+            "description": "Segundo término (Potencia)",
+            "content": null
+          }
+        ],
+        "latexCode": "{#1}^{#2}",
+        "pythonCode": "def main(x, y):\n  return sympify(x) ** sympify(y)"
+      },
+      {
+        "ID_CARD": 1010,
+        "title": "Raíz cuadrada",
+        "description": "Raíz cuadrada de un término",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Término",
+            "content": null
+          }
+        ],
+        "latexCode": "\\sqrt{#1}",
+        "pythonCode": "def main(x):\n  return sqrt(sympify(x))"
+      },
+      {
+        "ID_CARD": 1011,
+        "title": "Raíz n-ésima",
+        "description": "Raíz n-ésima de un término",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Término",
+            "content": null
+          },
+          {
+            "symbol": "y",
+            "description": "Indice n-ésimo de la raíz",
+            "content": null
+          }
+        ],
+        "latexCode": "\\sqrt[#2]{#1}",
+        "pythonCode": "def main(x, y):\n  return Pow(sympify(x), Rational(1, sympify(y)))"
+      },
+      {
+        "ID_CARD": 1012,
+        "title": "Exponencial",
+        "description": "Exponencial de un término",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Término",
+            "content": null
+          }
+        ],
+        "latexCode": "e^{#1}",
+        "pythonCode": "def main(x):\n  return exp(x)"
+      },
+      {
+        "ID_CARD": 1013,
+        "title": "Logaritmo natural",
+        "description": "Logaritmo natural de un término",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Término",
+            "content": null
+          }
+        ],
+        "latexCode": "\\log{\\left({#1}\\right)}",
+        "pythonCode": "def main(x):\n  return log(x)"
+      },
+      {
+        "ID_CARD": 1014,
+        "title": "Logaritmo general",
+        "description": "Logaritmo en la base especificada de un término",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Término",
+            "content": null
+          },
+          {
+            "symbol": "y",
+            "description": "Base",
+            "content": null
+          }
+        ],
+        "latexCode": "\\log_{#2}{\\left({#1}\\right)}",
+        "pythonCode": "def main(x, y):\n  return log(x, y)"
+      }
+    ]
+  },
+  {
+    "category": "Trigonometría",
+    "expanded": false,
+    "content": [
+      {
+        "ID_CARD": 1015,
+        "title": "Seno",
+        "description": "Seno trigonométrico de un ángulo",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Ángulo en radianes",
+            "content": null
+          }
+        ],
+        "latexCode": "\\sin{\\left({#1}\\right)}",
+        "pythonCode": "def main(x):\n  return sin(x)"
+      },
+      {
+        "ID_CARD": 1016,
+        "title": "Coseno",
+        "description": "Coseno trigonométrico de un ángulo",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Ángulo en radianes",
+            "content": null
+          }
+        ],
+        "latexCode": "\\cos{\\left({#1}\\right)}",
+        "pythonCode": "def main(x):\n  return cos(x)"
+      },
+      {
+        "ID_CARD": 1017,
+        "title": "Tangente",
+        "description": "Tangente trigonométrico de un ángulo",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Ángulo en radianes",
+            "content": null
+          }
+        ],
+        "latexCode": "\\tan{\\left({#1}\\right)}",
+        "pythonCode": "def main(x):\n  return tan(x)"
+      },
+      {
+        "ID_CARD": 1018,
+        "title": "Cotangente",
+        "description": "Cotangente trigonométrico de un ángulo",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Ángulo en radianes",
+            "content": null
+          }
+        ],
+        "latexCode": "\\cot{\\left({#1}\\right)}",
+        "pythonCode": "def main(x):\n  return cot(x)"
+      },
+      {
+        "ID_CARD": 1019,
+        "title": "Secante",
+        "description": "Secante trigonométrico de un ángulo",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Ángulo en radianes",
+            "content": null
+          }
+        ],
+        "latexCode": "\\sec{\\left({#1}\\right)}",
+        "pythonCode": "def main(x):\n  return sec(x)"
+      },
+      {
+        "ID_CARD": 1020,
+        "title": "Cosecante",
+        "description": "Cosecante trigonométrico de un ángulo",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Ángulo en radianes",
+            "content": null
+          }
+        ],
+        "latexCode": "\\csc{\\left({#1}\\right)}",
+        "pythonCode": "def main(x):\n  return csc(x)"
+      }
+    ]
+  },
+  {
+    "category": "Cálculo diferencial",
+    "expanded": false,
+    "content": [
+      {
+        "ID_CARD": 1021,
+        "title": "Límite",
+        "description": "Límite de una expresión cuando una variable tiende a un valor",
+        "params": [
+          {
+            "symbol": "x",
+            "description": "Variable",
+            "content": null
+          },
+          {
+            "symbol": "h",
+            "description": "Tendencia",
+            "content": null
+          },
+          {
+            "symbol": "f",
+            "description": "Expresión",
+            "content": null
+          }
+        ],
+        "latexCode": "\\lim_{{#1}\\longrightarrow{#2}}{\\left({#3}\\right)}",
+        "pythonCode": "def main(x, h, f):\n  return limit(f, x, h)"
+      },
+      {
+        "ID_CARD": 1022,
+        "title": "Derivada",
+        "description": "Derivada en una variable de una expresión",
+        "params": [
+          {
+            "symbol": "f",
+            "description": "Expresión matemática",
+            "content": null
+          },
+          {
+            "symbol": "x",
+            "description": "Variable sobre el cual se realiza la derivación",
+            "content": null
+          }
+        ],
+        "latexCode": "\\frac{d}{d{#2}}{\\left({#1}\\right)}",
+        "pythonCode": "def main(f, x):\n  return diff(f, x)"
+      },
+      {
+        "ID_CARD": 1023,
+        "title": "N-ésima derivada",
+        "description": "N-ésima derivada en una variable de una expresión",
+        "params": [
+          {
+            "symbol": "f",
+            "description": "Expresión matemática",
+            "content": null
+          },
+          {
+            "symbol": "x",
+            "description": "Variable sobre el cual se realiza la derivación",
+            "content": null
+          },
+          {
+            "symbol": "n",
+            "description": "Número de derivadas a realizar",
+            "content": null
+          }
+        ],
+        "latexCode": "\\frac{d^{#3}}{d{#2}^{#3}}{\\left({#1}\\right)}",
+        "pythonCode": "def main(f, x, n):\n  return diff(f, x, n)"
+      }
+    ]
+  },
+  {
+    "category": "Cálculo integral",
+    "expanded": false,
+    "content": [
+      {
+        "ID_CARD": 1024,
+        "title": "Integral indefinida",
+        "description": "Integral indefinida en una variable de una expresión",
+        "params": [
+          {
+            "symbol": "f",
+            "description": "Expresión matemática",
+            "content": null
+          },
+          {
+            "symbol": "x",
+            "description": "Variable sobre el cual se realiza la integración",
+            "content": null
+          }
+        ],
+        "latexCode": "\\int {#1}\\ d{#2}",
+        "pythonCode": "def main(f_x, x):\n  return integrate(f_x, Symbol(x))"
+      },
+      {
+        "ID_CARD": 1025,
+        "title": "Integral definida",
+        "description": "Integral definida en una variable de una expresión",
+        "params": [
+          {
+            "symbol": "f",
+            "description": "Expresión matemática",
+            "content": null
+          },
+          {
+            "symbol": "x",
+            "description": "Variable sobre el cual se realiza la integración",
+            "content": null
+          },
+          {
+            "symbol": "a",
+            "description": "Límite inferior",
+            "content": null
+          },
+          {
+            "symbol": "b",
+            "description": "Límite superior",
+            "content": null
+          }
+        ],
+        "latexCode": "\\int_{#3}^{#4} {#1}\\ d{#2}",
+        "pythonCode": "def main(f_x, x, a, b):\n  return integrate(f_x, (Symbol(x), sympify(a), sympify(b)))"
+      }
+    ]
+  },
+  {
+    "category": "Utilidades",
+    "expanded": false,
+    "content": [
+      {
+        "ID_CARD": 1026,
+        "title": "Evaluar",
+        "description": "Evaluar expresión para intentar obtener un valor numérico",
+        "params": [
+          {
+            "symbol": "f",
+            "description": "Expresión a evaluar",
+            "content": null
+          }
+        ],
+        "latexCode": "\\text{eval}\\left({#1}\\right)",
+        "pythonCode": "def main(f):\n  return sympify(f).evalf()"
+      }
+    ]
+  }
+]

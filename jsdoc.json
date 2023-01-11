@@ -1,0 +1,23 @@
+{
+  "source": {
+    "include": ["./src", "./utils"],
+    "includePattern": ".+\\.js(doc|x)?$"
+  },
+  "plugins": ["plugins/markdown", "jsdoc-http-plugin"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./docs/",
+    "recurse": true,
+    "verbose": true
+  },
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "sourceType": "module",
+  "title": "Sigmath"
+}

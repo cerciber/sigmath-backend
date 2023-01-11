@@ -1,0 +1,3 @@
+{
+  "dependence_order": ["category", "card", "user", "userCard", "cardInfo", "cardByDefault", "rate"]
+}

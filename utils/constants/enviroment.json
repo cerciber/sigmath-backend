@@ -1,0 +1,62 @@
+{
+  "development": {
+    "server": {
+      "port": 3000
+    },
+    "data_base": {
+      "name": "data_base",
+      "username": "postgres",
+      "password": "123456789",
+      "host": "localhost",
+      "dialect": "postgres",
+      "migrationStorage": "sequelize",
+      "pool": {
+        "max": 5,
+        "min": 0,
+        "acquire": 3000,
+        "idle": 10000
+      },
+      "logging": false,
+      "redefine": false
+    }
+  },
+  "test": {
+    "server": {
+      "port": 3001
+    },
+    "data_base": {
+      "name": "test_data_base",
+      "username": "postgres",
+      "password": "admin",
+      "host": "localhost",
+      "dialect": "postgres",
+      "pool": {
+        "max": 5,
+        "min": 0,
+        "acquire": 3000,
+        "idle": 10000
+      },
+      "logging": false,
+      "redefine": false
+    }
+  },
+  "production": {
+    "server": {
+      "port": 8080
+    },
+    "data_base": {
+      "name": "real_data_base",
+      "username": "postgres",
+      "password": "admin",
+      "host": "",
+      "dialect": "postgres",
+      "pool": {
+        "max": 5,
+        "min": 0,
+        "acquire": 3000,
+        "idle": 10000
+      },
+      "logging": false
+    }
+  }
+}
